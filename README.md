@@ -28,7 +28,7 @@ In this project, you will:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/fract-ol
+   git clone https://github.com/msabr/fract-ol
    cd fract-ol
 
 2. Build the mandatory part:
