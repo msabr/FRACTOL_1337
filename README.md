@@ -35,3 +35,10 @@ To compile the project:
 ```bash
 make
 
+Then, to launch different fractals:
+
+```bash
+./fractol mandelbrot
+
+```bash
+./fractol julia -0.8 0.156
