@@ -28,8 +28,8 @@ In this project, you will:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/msabr/fract-ol
-   cd fract-ol
+   git clone https://github.com/msabr/FRACTOL_1337
+   cd FRACTOL_1337
 
 2. Build the mandatory part:
 
