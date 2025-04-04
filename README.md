@@ -1,44 +1,53 @@
-# 🧠FRACTOL_1337
+# **fract-ol - 42 Network**
 
-**fract-ol** is a project from the 42 cursus that explores fractals using **MiniLibX**, a simple graphics library. The goal is to render and interact with fractals like the **Mandelbrot set**, the **Julia set**, and optionally the **Burning Ship**.
+## **Overview**  
+**fract-ol** is a project from the **42 Network** designed to explore **fractals** using **MiniLibX (mlx)**, a simple graphics library. The goal of the project is to render and interact with fractals like the **Mandelbrot set**, **Julia set**, and optionally the **Burning Ship** fractal. This project introduces fundamental concepts in **graphical programming**, including the use of **complex numbers**, **interactive controls**, and **performance optimization**.
 
----
+## **Project Scope**  
+In this project, you will:
 
-## 📚 Project Objectives
+- Use **MiniLibX** to create a window and render fractals.
+- Implement fractal algorithms for the **Mandelbrot set**, **Julia set**, and **Burning Ship**.
+- Handle **keyboard** and **mouse inputs** for interactive controls (zoom, pan, iterations).
+- Use **complex numbers** to generate fractals.
+- Optimize the rendering for better performance, especially with higher iterations.
 
-- Understand and use **complex numbers**.
-- Implement fractal algorithms from scratch.
-- Use the **MiniLibX** to draw pixels and handle user inputs.
-- Allow interactive controls like zoom, move, and iteration changes.
+## **Learning Outcomes**  
+- Understanding the use of **complex numbers** in graphics programming.
+- Implementing fractal algorithms from scratch.
+- Working with **MiniLibX** for **2D graphics rendering**.
+- Handling **interactive user inputs** for zooming, panning, and changing iterations.
+- Optimizing the rendering and performance of fractal visuals.
 
----
+## **Usage**  
+### How to Build and Run
 
-## 🌀 Fractals Implemented
+## **Usage**  
+### How to Build and Run
 
-### ✔️ Mandelbrot Set
-Classic fractal defined by the formula:  
-`z = z² + c`, starting with `z = 0` and `c` from the complex plane.
+1. Clone the repository:
 
-### ✔️ Julia Set
-Similar formula to Mandelbrot, but with a **fixed c** and variable `z`.
+   ```bash
+   git clone https://github.com/your_username/fract-ol
+   cd fract-ol
 
-### ✔️ Burning Ship (Bonus)
-A fractal similar to Mandelbrot but with a twist:  
-`z = (|Re(z)| + i|Im(z)|)² + c`, giving a “ship-like” appearance.
+2. Build the mandatory part:
 
----
+   ```bash
+   make
 
-## 🛠️ Compile & Launch
+3. Run mandelbrot:
 
-To compile the project:
+   ```bash
+   ./fractol mandelbrot
 
-```bash
-make
+3. Run julia:
 
-Then, to launch different fractals:
+   ```bash
+   ./fractol julia -0.8 0.156
 
-```bash
-./fractol mandelbrot
+#### Additional commands
 
-```bash
-./fractol julia -0.8 0.156
+- `make clean`: remove object files.
+- `make fclean`: remove the program and object files.
+- `make re`: rebuild everything.
