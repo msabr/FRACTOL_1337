@@ -6,7 +6,7 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 23:29:55 by msabr             #+#    #+#             */
-/*   Updated: 2025/04/04 21:43:16 by msabr            ###   ########.fr       */
+/*   Updated: 2025/04/04 22:02:13 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int	main(int argc, char **argv)
 	}
 	else if (argc == 4 && julia_check(argv) == 1)
 	{
-		window.julia.real = atoi(argv[2]);
-		window.julia.imaginary = atoi(argv[3]);
+		window.julia.real = ft_atoi(argv[2]);
+		window.julia.imaginary = ft_atoi(argv[3]);
 		if (window.julia.real > 2 || window.julia.real < -2)
 			return (print_error(), 0);
 		if (window.julia.imaginary > 2 || window.julia.imaginary < -2)

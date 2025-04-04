@@ -6,7 +6,7 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 21:29:34 by msabr             #+#    #+#             */
-/*   Updated: 2025/03/06 23:20:22 by msabr            ###   ########.fr       */
+/*   Updated: 2025/04/04 22:01:20 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # define INT_MAX 2147483647
 # define INT_MIN -2147483648
 
-long	ft_atoi(const char *str);
+double	ft_atoi(char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t n, size_t size);
 int		ft_isalnum(int c);

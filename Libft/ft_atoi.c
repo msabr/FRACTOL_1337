@@ -6,49 +6,51 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 09:54:04 by msabr             #+#    #+#             */
-/*   Updated: 2025/03/03 22:13:39 by msabr            ###   ########.fr       */
+/*   Updated: 2025/04/04 22:00:42 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long	chek_sign(char const *s, long *i)
+static double	atoi_helper(char *str, int i)
 {
-	long	sign;
+	double	fraction;
+	double	power;
 
-	sign = 1;
-	if (s[*i] == '-')
-	{
-		sign *= -1;
-		(*i)++;
-	}
-	else if (s[*i] == '+')
-		(*i)++;
-	return (sign);
-}
-
-long	ft_atoi(const char	*str)
-{
-	long	i;
-	long	sign;
-	long	result;
-	long	temp;
-
-	i = 0;
-	result = 0;
-	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	sign = chek_sign(str, &i);
+	fraction = 0.0;
+	power = 1.0;
+	i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		temp = result;
-		result = result * 10 + (str[i++] - '0');
-		if (result > -INT_MIN && sign == -1)
-			return (-INT_MIN);
-		if ((result / 10) != temp && sign == 1)
-			return (-1);
-		else if ((result / 10) != temp && sign == -1)
-			return (0);
+		power /= 10;
+		fraction = fraction + (str[i] - '0') * power;
+		i++;
 	}
-	return (result * sign);
+	return (fraction);
+}
+
+double	ft_atoi(char *str)
+{
+	double	number;
+	int		sign;
+	int		i;
+
+	sign = 1;
+	number = 0.0;
+	i = 0;
+	while (str[i] == 32 || str[i] == 9)
+		i++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		number *= 10;
+		number += str[i] - '0';
+		i++;
+	}
+	return ((atoi_helper(str, i) + number) * sign);
 }

@@ -6,7 +6,7 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:33:38 by msabr             #+#    #+#             */
-/*   Updated: 2025/04/04 21:45:25 by msabr            ###   ########.fr       */
+/*   Updated: 2025/04/04 21:59:14 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ typedef struct s_window
 int		julia_check(char **argv);
 int		mandelbrot_check(char *argv);
 double	scaling_func(double num, double new_min, double new_max);
-double	atoi(char *str);
 int		exit_func(t_window *window);
 void	pixel_put(int x, int y, t_image *img, int color);
 void	window_init(t_window *window);
