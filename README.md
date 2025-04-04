@@ -22,9 +22,6 @@ In this project, you will:
 ## **Usage**  
 ### How to Build and Run
 
-## **Usage**  
-### How to Build and Run
-
 1. Clone the repository:
 
    ```bash
