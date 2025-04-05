@@ -4,7 +4,9 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit
+MLX_PATH = minilibx-linux
+
+MLX_FLAGS = -L$(MLX_PATH) -lmlx  -lXext -lX11
 
 LIBFT = Libft/libft.a
 

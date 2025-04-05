@@ -14,8 +14,8 @@
 # define FRACTOL_H
 
 // bibliotheques
-# include "../Libft/libft.h"
-# include <mlx.h>
+# include "Libft/libft.h"
+# include "minilibx-linux/mlx.h"
 
 // macros
 # define WIDTH 900 
