@@ -15,7 +15,7 @@
 
 // bibliotheques
 # include "Libft/libft.h"
-# include "minilibx-linux/mlx.h"
+# include "mlx/mlx.h"
 
 // macros
 # define WIDTH 900 
