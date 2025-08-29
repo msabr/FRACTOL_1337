@@ -1,4 +1,7 @@
 # **fract-ol - 42 Network**
+<div align="center">
+<img src="imgs/fract-ol.png"/>
+</div>
 
 ## **Overview**  
 **fract-ol** is a project from the **42 Network** designed to explore **fractals** using **MiniLibX (mlx)**, a simple graphics library. The goal of the project is to render and interact with fractals like the **Mandelbrot set**, **Julia set**, and optionally the **Burning Ship** fractal. This project introduces fundamental concepts in **graphical programming**, including the use of **complex numbers**, **interactive controls**, and **performance optimization**.
@@ -37,11 +40,21 @@ In this project, you will:
 
    ```bash
    ./fractol mandelbrot
+<div align="center">
+<img src="imgs/mandelbrot.png" width="600"/>
+</div>
 
 3. Run julia:
 
    ```bash
    ./fractol julia -0.8 0.156
+<div style="text-align:center;">
+<img src="imgs/julia(-1,1).png" style="display:inline-block;" width="320"/>
+
+<img src="imgs/julia(1,-1).png" style="display:inline-block;" width="320"/>
+
+<img src="imgs/julia(1,1).png" style="display:inline-block;" width="320"/>
+</div>
 
 #### Additional commands
 
