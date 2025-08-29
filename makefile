@@ -2,11 +2,9 @@ NAME = fractol
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I.
 
-MLX_PATH = minilibx-linux
-
-MLX_FLAGS = -L$(MLX_PATH) -lmlx  -lXext -lX11
+MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit
 
 LIBFT = Libft/libft.a
 

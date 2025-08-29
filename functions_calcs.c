@@ -6,7 +6,7 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 23:31:35 by msabr             #+#    #+#             */
-/*   Updated: 2025/04/04 21:39:48 by msabr            ###   ########.fr       */
+/*   Updated: 2025/08/29 17:04:35 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 // Function to set the complex number c
 static void	handl_pixel(double x, double y, t_window *window)
 {
-	t_complex	z; 
-	t_complex	c; 
+	t_complex	z;
+	t_complex	c;
 	int			i;
 
 	handl_pixel_inits(&i, &z);

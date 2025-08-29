@@ -6,7 +6,7 @@
 /*   By: msabr <msabr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:33:38 by msabr             #+#    #+#             */
-/*   Updated: 2025/04/04 21:59:14 by msabr            ###   ########.fr       */
+/*   Updated: 2025/08/29 16:59:10 by msabr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 // bibliotheques
 # include "Libft/libft.h"
-# include "mlx/mlx.h"
+# include <mlx.h>
 
 // macros
 # define WIDTH 900 
